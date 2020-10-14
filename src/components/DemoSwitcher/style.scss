@@ -1,0 +1,83 @@
+.chooseDemoWrapper{
+  position: fixed;
+  right: -14.8rem;
+  top: 19%;
+  z-index: 9999;
+  transition: all 0.3s ease 0s;
+  &.visible{
+    right: 0;
+  }
+  .closer{
+    position: absolute;
+    left: -4.36rem;
+    top: 0;
+    height: 4rem;
+    width: 4rem;
+    background: #2a35e0;
+    cursor: pointer;
+    padding-top: 1.5rem;
+    span{
+      background: #fff;
+      height: 0.10rem;
+      width: 1.6rem;
+      display: block;
+      margin: auto;
+      &:first-child{
+        margin-top: 0.1rem;
+        margin-bottom: 0.5rem;
+      }
+      transition: all 0.3s ease 0s;
+    }
+  }
+  &.visible{
+    span{
+      &:first-child{
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      transform: rotate(-42deg) translate(5px, -4px);
+      &:first-child{
+        margin-bottom: 1rem;
+        transform: rotate(42deg) translate(4px, 2px);
+      }
+    }
+  }
+  .chooseDemo{
+    color: #fff;
+    padding: 0.2rem 2rem;
+    display: block;
+    letter-spacing: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  .ecm,
+  .furniture,
+  .travel{
+    font-weight: 500;
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.03);
+    span{
+      background: #000000;
+    }
+    &.active,
+    &:hover{
+      color: #000;
+      background: #f5f2f2;
+    }
+  }
+  .ico{
+    background: #412dbf;
+    &.active,
+    &:hover{
+      background: #3440bf;
+    }
+  }
+  .dark{
+    background: #000000;
+    &.active,
+    &:hover{
+      background: #111115;
+    }
+  }
+}

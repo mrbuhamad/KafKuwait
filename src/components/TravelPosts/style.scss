@@ -1,0 +1,47 @@
+.travelPost{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  .tpItem{
+    flex-basis: 50%;
+    height: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 5%;
+      top: 5%;
+      z-index: 1;
+      height: 90%;
+      width: 90%;
+      opacity: 0;
+      border: 2px solid rgba(255,255,255,0.2);
+      transform: scale(1.1);
+      transition: all 0.3s ease 0s;
+    }
+    &:hover:before{
+      opacity: 1;
+      transform: scale(1);
+    }
+    .tpImg{
+      height: 100%;
+      display: block;
+      transition: all 0.3s ease 0s;
+      transform: scale(1);
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &:hover .tpImg{
+      transform: scale(1.1);
+    }
+  }
+
+  //temporary  it will be deleted
+  //display: none;
+}

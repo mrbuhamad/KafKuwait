@@ -1,0 +1,267 @@
+.comingSoonIco{
+  min-height: 100vh;
+  background: #001A42;
+  background: radial-gradient(circle, #4834D2 0%, #341F98 100%);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 7rem 0 8rem;
+  @media (min-width: 768px) and (max-width: 991px) {
+    min-height: auto;
+  }
+  @media (min-width: 991px) and (max-width: 1200px) {
+    padding: 0;
+    padding-left: 3rem;
+    padding-top: 7rem;
+  }
+  @media (max-width: 991px) {
+    display: block;
+    padding-top: 5rem;
+  }
+  .bgShape{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+    transform: translateY(-50%);
+    animation: shapeshack 300ms ease-in-out 0s linear infinite;
+  }
+  .bgShape2{
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+    max-width: 25%;
+  }
+  
+  @keyframes shapeshack {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(3deg);
+    }
+  }
+  
+  .container{
+    max-width: 1400px;
+  }
+  .sparkleWrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  @media (max-width: 767px) {
+    .socialLinks {
+      border-radius: 25px;
+      padding: 3px 15px 1px 4px;
+    }
+  }
+  
+
+  .icoContent{
+      @media (min-width: 1200px ) and (max-width: 1400px) {
+        padding-left: 2.5rem;
+      }
+    h2 {
+      font-family: 'Libre Baskerville', serif;
+      color: #fff;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      font-size: 6rem;
+      line-height: 6rem;
+      @media (min-width: 1201px) and (max-width: 1599px) {
+        font-size: 4.5rem;
+        line-height: 5rem;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      @media (max-width: 767px) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+    }
+    .react-countdown{
+      margin-top: 4rem;
+      @media (min-width: 1201px) and (max-width: 1599px) {
+        margin-top: 3rem;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        margin-top: 2rem;
+      }
+      @media (max-width: 767px) {
+        margin-top: 2rem;
+      }
+      li{
+        margin: 0 2.1rem;
+        &:first-child{
+          margin-left: 0;
+        }
+        @media (max-width: 767px) {
+          margin: 0px 1.3rem;
+        }
+        p{
+          text-align: left;
+          color: #444;
+        }
+        p.digit{
+          color: #fff;
+          font-size: 9rem;
+          font-weight: 900;
+          line-height: 9rem;
+          margin-bottom: 1rem;
+          @media (min-width: 1201px) and (max-width: 1599px) {
+            font-size: 7rem;
+            line-height: 7rem;
+            margin-bottom: 0;
+          }
+          @media (min-width: 992px) and (max-width: 1200px) {
+            font-size: 5.6rem;
+            line-height: 6rem;
+          }
+          @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 6rem;
+            line-height: 6rem;
+          }
+          
+          @media (max-width: 767px) {
+            font-size: 5rem;
+            line-height: 4rem;
+          }
+          @media (max-width: 500px) {
+            font-size: 3rem;
+            line-height: 3rem;
+          }
+        }
+        p.text{
+          color: #fff;
+          text-align: center;
+          font-weight: 500;
+          font-size: 1.4rem;
+          line-height: 1.7rem;
+          margin-left: 0.3rem;
+        }
+        &:after {
+          top: 30%;
+          right: -2.6rem;
+          font-size: 3rem;
+          color: #c7bebe;
+          @media (max-width:600px) {
+                top: 4px;
+                right: -1.6rem;
+            }
+        }
+      }
+    }
+  }
+  .iconContentRight{
+    text-align: left;
+    padding-bottom: 3rem;
+    position: relative;
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding-bottom: 0;
+    }
+    .newsLeterContent{
+      padding-left: 0;
+      margin: 0;
+      margin-bottom: 3rem;
+    }
+    .newsLetterTitle{
+      padding-left: 0;
+      color: #fff;
+    }
+    .contactUs2{
+      margin-top: 0;
+      color: #ffffff;
+      background: transparent;
+      letter-spacing: 0;
+      padding: 0.5rem 2rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .newsLetter{
+      margin-top: 0;
+      text-align: left;
+      @media (max-width: 991px) {
+        margin-top: 4rem;
+      }
+      &:after,
+      &:before{
+        bottom: 0;
+        @media (min-width: 768px) and (max-width: 991px) {
+          display: none;
+        }
+      }
+      form {
+        background: #fff;
+        input{
+          color: #040404;
+          font-weight: 500;
+          &:active, &:focus {
+            background: #ffffff;
+          }
+        }
+        button:after{
+          border-color: #402bbb;
+        }
+        button:before {
+          background: #402bbb;
+        }
+      }
+    }
+  }
+  .icoHeader{
+    margin-bottom: 6rem;
+  }
+  .contactWrapper {
+    background: rgba(70, 50, 206, 0.95);
+    .cntInner {
+      .cntForm {
+        form .formBox input,
+        form .formBox textarea {
+          width: 100%;
+          height: 5rem;
+          background: transparent;
+          border: 1px solid #ffffff;
+          padding-left: 1rem;
+          &::-webkit-input-placeholder {
+            color: #dad3d3;
+          }
+          &::-moz-placeholder {
+            color: #dad3d3;
+          }
+          &:-ms-input-placeholder {
+            color: #dad3d3;
+          }
+          &:-moz-placeholder {
+            color: #dad3d3;
+          }
+        }
+        form{
+          .isInValid {
+            color: #e6acac;
+          }
+          .formSubmit button {
+            background: #5049f3;
+          }
+        }
+      }
+      .cntHead h4:before {
+        background: #5049f3;
+      }
+    }
+  }
+}

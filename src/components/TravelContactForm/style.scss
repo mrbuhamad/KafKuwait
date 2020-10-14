@@ -1,0 +1,94 @@
+body {
+  .tvContact{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease 0s;
+    display: flex;
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      background: #ffffff!important;
+    }
+    @media (max-width: 991px) {
+      position: fixed;
+      height: 100vh;
+      background: #ffffff!important;
+    }
+
+    &.show{
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .closser {
+      position: absolute;
+      right: 2rem;
+      top: 1rem;
+      font-size: 17px;
+      cursor: pointer;
+      width: 23px;
+      text-align: center;
+
+      @media (min-width: 1201px) {
+        display: none;
+      }
+    }
+
+    form{
+      margin: auto;
+      position: relative;
+      width: 500px;
+      max-width: 100%;
+      background: #fff;
+      padding: 70px;
+      border-radius: 2px;
+      @media (max-width: 767px) {
+        padding: 70px 30px;
+      }
+
+      h4{
+        color: #232323;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+      }
+      label{
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0;
+      }
+      input{
+        width: 100%;
+        height: 45px;
+        padding-left: 15px;
+        letter-spacing: 0;
+        font-size: 12px;
+      }
+      .cbtn{
+        background: #232323;
+        width: 150px;
+        height: 45px;
+        border: 2px solid #232323;
+        font-size: 14px;
+        letter-spacing: 0;
+        font-weight: 600;
+        margin-top: 10px;
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        &:hover{
+          color: #232323;
+          border-color: #232323;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

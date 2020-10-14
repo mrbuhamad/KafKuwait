@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+body {
+  .comingSoonTravel {
+    position: relative;
+    z-index: 1;
+    text-align: right;
+
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
+    .travelContent{
+      min-height: 100vh;
+      padding: 100px 150px;
+      background: #FFEB3C;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media (min-width: 1201px) and (max-width: 1599px) {
+        padding: 100px;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        padding: 100px 50px;
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        padding: 80px 15px;
+        min-height: unset;
+      }
+      @media (max-width: 767px) {
+        padding: 70px 15px;
+        min-height: unset;
+      }
+      .tvsTitle{
+        h2{
+          font-size: 119px;
+          text-transform: uppercase;
+          line-height: 121px;
+          padding-left: 90px;
+          font-weight: 900;
+          background: #f56900;
+          background: url("../../images/bg/10.jpg") center/cover no-repeat;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          @media (min-width: 1201px) and (max-width: 1599px) {
+            font-size: 70px;
+            line-height: 101px;
+            padding-left: 0;
+          }
+
+          @media (min-width: 992px) and (max-width: 1200px) {
+            font-size: 53px;
+            line-height: 71px;
+            padding-left: 0;
+          }
+
+          @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 56px;
+            padding: 0;
+            line-height: 70px;
+          }
+          @media (max-width: 767px) {
+            font-size: 52px;
+            padding: 0;
+            line-height: 60px;
+          }
+          @media (max-width: 550px) {
+            font-size: 33px;
+            line-height: 40px;
+            padding-left: 0;
+          }
+        }
+      }
+
+      .countDown{
+        margin-top: 50px;
+        @media (max-width: 767px) {
+          margin-top: 30px;
+        }
+        .react-countdown{
+          li{
+            &:first-child{
+              &:after{
+                display: none;
+              }
+              .digit{
+                font-size: 112px;
+                font-weight: 900;
+                line-height: 104px;
+                color: #2b2a2a;
+                width: auto;
+                @media (max-width: 767px) {
+                  width: 228px;
+                  font-size: 65px;
+                }
+              }
+              .text{
+                position: absolute;
+                top: 4.3rem;
+                left: -6rem;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: 1.35rem;
+                transform: rotate(-90deg);
+                line-height: 16px;
+
+                @media (max-width: 767px) {
+                  position: static;
+                  left: -25px;
+                  transform: none;
+                }
+
+                &:before{
+                  content: '';
+                  position: absolute;
+                  left: -5px;
+                  bottom: 0px;
+                  height: 4px;
+                  width: 100%;
+                  opacity: 0.1;
+                  background: #000;
+                  border-radius: 50px;
+                }
+              }
+            }
+            .digit{
+              line-height: 1.4;
+              margin-bottom: 0;
+              width: 60px;
+              font-size: 36px;
+              color: #333;
+              font-weight: 300;
+            }
+            .text{
+              color: #444444;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      .newsletterForm{
+        margin-top: 5rem;
+        position: relative;
+
+        .submitInfo{
+          position: absolute;
+          right: 123px;
+          top: -30px;
+          font-size: 11px;
+          letter-spacing: 0;
+          font-weight: 600;
+          color: #2b2a2a;
+        }
+
+        form{
+          margin-left: auto;
+          max-width: 500px;
+          display: flex;
+          @media (max-width: 1200px) {
+            margin-right: auto;
+          }
+
+          input{
+            width: 100%;
+            height: 45px;
+            border: 1px solid #2b2a2a;
+            background: transparent;
+            letter-spacing: 0;
+            color: #2b2a2a;
+            font-size: 13px;
+            font-weight: 500;
+            margin-right: 10px;
+            &:focus{
+              outline: none;
+              box-shadow: 0 0 5px rgba(240, 195, 195, 0.67);
+              border: 1px solid #fd9762;
+            }
+          }
+          button{
+            width: 150px;
+            height: 45px;
+            background: #2b2a2a;
+            border: 1px solid #2b2a2a;
+            color: #fff;
+            letter-spacing: 0;
+            font-size: 12px;
+            outline: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+          }
+        }
+      }
+
+      .social{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 3rem;
+        @media (max-width: 1200px) {
+          justify-content: center;
+        }
+
+        p{
+          color: #444;
+          font-weight: 600;
+          letter-spacing: 0;
+          font-size: 12px;
+          padding-top: 4px;
+        }
+        .socialLinks{
+          position: static;
+          padding-right: 0;
+          a {
+            height: 27px;
+            width: 27px;
+            background: #2b2a2a;
+            line-height: 20px;
+            border-radius: 2px;
+            text-align: center;
+            font-size: 11px;
+            border: 1px solid #2b2a2a;
+            &:hover{
+              background: transparent;
+              color: #2b2a2a;
+            }
+          }
+        }
+      }
+
+      .hamburgerBtn{
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        height: 4rem;
+        width: 4rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        span{
+          display: block;
+          height: 2px;
+          width: 20px;
+          background: #444444;
+          margin: 0.16rem auto;
+          transition: all 0.3s ease 0s;
+        }
+        &:after,
+        &:before{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          border: 2px solid #444444;
+          border-right-color: transparent;
+          opacity: 1;
+          transition: all 0.3s ease 0s;
+        }
+        &:after{
+          -webkit-animation: rotating 3000ms linear infinite;
+          -o-animation: rotating 3000ms linear infinite;
+          animation: rotating 3000ms linear infinite;
+        }
+        &:not(.active):hover{
+          width: 3.5rem;
+          height: 3.5rem;
+          &:after{
+            opacity: 0;
+          }
+          span{
+            &:first-child{
+              transform: translate(26px, 2px)rotate(42deg);
+              width: 11px;
+            }
+            &:nth-child(2){
+              width: 41px;
+              transform: translateX(6px);
+            }
+            &:last-child{
+              transform: translate(26px, -1px)rotate(-42deg);
+              width: 11px;
+            }
+          }
+        }
+
+        &.active{
+          span{
+            &:first-child{
+              transform: translate(1px, 5px) rotate(42deg);
+            }
+            &:nth-child(2){
+              opacity: 0;
+            }
+            &:last-child{
+              transform: translate(1px, -5px) rotate(-42deg);
+            }
+          }
+        }
+      }
+
+    }
+
+    .travelPost{
+      @media (max-width: 767px) {
+        height: 400px;
+      }
+    }
+
+  }
+}
+
+@keyframes rotating {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
